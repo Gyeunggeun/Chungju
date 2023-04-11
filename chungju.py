@@ -1,10 +1,19 @@
 import streamlit as st
 
+
 def 홈페이지():
     # 제목
     st.markdown("<h1 style='text-align: center; color: #FF5733; font-family: Arial;'>청원생명</h1>", unsafe_allow_html=True)
-    st.image("D:\Chungju\슬라이드1.PNG", width=500)
-    st.markdown("<h3 style='text-align: center; font-family: Arial;'><br><br>이곳에는 청원생명에 대한 간단한 소개글이 올라갈 예정입니다</h3>", unsafe_allow_html=True)
+
+    # 이미지 로드
+    image_url = "https://raw.githubusercontent.com/Gyeunggeun/Chungju/31f7238ac276891ff905ca1826209a9ea379352a/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C1.PNG"
+    # 이미지 중앙 배치
+    col1, col2, col3 = st.columns([1, 2, 1])
+    with col2:
+        st.image(image_url, width=500)
+
+    st.markdown("<h3 style='text-align: center; font-family: Arial;'><br><br>이곳에는 청원생명에 대한 간단한 소개글이 올라갈 예정입니다</h3>",
+                unsafe_allow_html=True)
 
     # # 배경 색상 변경
     # st.markdown(f"""
