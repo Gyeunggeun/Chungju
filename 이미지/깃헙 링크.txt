@@ -30,4 +30,6 @@
 
 포도 : https://raw.githubusercontent.com/Gyeunggeun/Chungju/a94c1543ee99a197ec46ddceae8be265a5fd93e8/%EC%9D%B4%EB%AF%B8%EC%A7%80/%ED%8F%AC%EB%8F%84_%EC%9B%90%EB%B3%B8.png
 
-고구마떡 : 
+고구마떡 : https://raw.githubusercontent.com/Gyeunggeun/Chungju/0060c3cf1aa3b1186e79bb6dfcc05ca929d978c0/%EC%9D%B4%EB%AF%B8%EC%A7%80/%EA%B3%A0%EA%B5%AC%EB%A7%88%EB%96%A1.png
+
+토마토 : https://raw.githubusercontent.com/Gyeunggeun/Chungju/0060c3cf1aa3b1186e79bb6dfcc05ca929d978c0/%EC%9D%B4%EB%AF%B8%EC%A7%80/%ED%86%A0%EB%A7%88%ED%86%A0_%EC%9B%90%EB%B3%B8.png
