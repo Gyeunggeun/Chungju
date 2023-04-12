@@ -25,3 +25,9 @@
 고구마찐빵 : https://raw.githubusercontent.com/Gyeunggeun/Chungju/f33372d4dbdacfa398707644873322dc4c7e0984/%EC%9D%B4%EB%AF%B8%EC%A7%80/%EA%B3%A0%EA%B5%AC%EB%A7%88%EC%8C%80%EC%B0%90%EB%B9%B5_%EC%9B%90%EB%B3%B8.png
 
 딸기 : https://raw.githubusercontent.com/Gyeunggeun/Chungju/f33372d4dbdacfa398707644873322dc4c7e0984/%EC%9D%B4%EB%AF%B8%EC%A7%80/%EB%94%B8%EA%B8%B0_%EC%9B%90%EB%B3%B8.png
+
+수박 : https://raw.githubusercontent.com/Gyeunggeun/Chungju/a94c1543ee99a197ec46ddceae8be265a5fd93e8/%EC%9D%B4%EB%AF%B8%EC%A7%80/%EC%88%98%EB%B0%95.png
+
+포도 : https://raw.githubusercontent.com/Gyeunggeun/Chungju/a94c1543ee99a197ec46ddceae8be265a5fd93e8/%EC%9D%B4%EB%AF%B8%EC%A7%80/%ED%8F%AC%EB%8F%84_%EC%9B%90%EB%B3%B8.png
+
+고구마떡 : 
