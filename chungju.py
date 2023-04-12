@@ -53,13 +53,16 @@ def 청원생명이란():
         st.image('https://shop.ilovegohyang.go.kr/thumb/6666cd76f96956469e7be39d750cc7d9/860_244_44ba6bd969f981e1e3b1de19bb98.jpg')
         st.text('이 부분에는 청원생명 브랜드에 대한 상세 설명이 들어갈 예정입니다')
 
+
 def 특산물():
     # 특산물 소개글 작성
     st.markdown("<h1 style='text-align: center; color: #FF5733; font-family: Arial;'>특산물</h1>", unsafe_allow_html=True)
-    
+
     col1, col2, col3 = st.columns(3)
     with col1:
-        st.image('https://shop.ilovegohyang.go.kr/thumb/6666cd76f96956469e7be39d750cc7d9/860_244_44ba6bd969f981e1e3b1de19bb98.jpg')
+        image_url = 'https://raw.github.com/Gyeunggeun/Chungju/2ca6cb3ded9cfa145b68bee05f86ea1eb843542a/%EC%9D%B4%EB%AF%B8%EC%A7%80/%EC%A7%81%EC%A7%80%EC%8C%80_%EB%B9%84%EC%9C%A8%EC%A1%B0%EC%A0%95.png'
+        markdown_text = f"<div style='text-align:center'><img src='{image_url}' style='width: 150px; height: 200px;'></div></div>"
+        st.markdown(markdown_text, unsafe_allow_html=True)
         st.text('23년 직지쌀 10kg')
         original_price = '35,000원'
         discount_price = '28,000원'
@@ -70,6 +73,7 @@ def 특산물():
         # st.write("<s>100</s>    30000원", unsafe_allow_html=True)
         st.markdown(discount_html, unsafe_allow_html=True)
         # st.latex(r'''\sout{-10%}''')
+
     with col2:
         st.image('https://shop.ilovegohyang.go.kr/thumb/6666cd76f96956469e7be39d750cc7d9/860_244_44ba6bd969f981e1e3b1de19bb98.jpg')
         st.text('딸기 1KG')
