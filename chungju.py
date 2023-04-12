@@ -82,7 +82,7 @@ def 특산물():
         st.markdown(discount_html, unsafe_allow_html=True)
         
     with col3:
-        st.image('https://shop.ilovegohyang.go.kr/thumb/6666cd76f96956469e7be39d750cc7d9/860_244_44ba6bd969f981e1e3b1de19bb98.jpg')
+        st.image('https://raw.githubusercontent.com/Gyeunggeun/Chungju/2ca6cb3ded9cfa145b68bee05f86ea1eb843542a/%EC%9D%B4%EB%AF%B8%EC%A7%80/%EA%B3%A0%EA%B5%AC%EB%A7%88_%EC%9B%90%EB%B3%B8.png')
         st.text('꿀 고구마 5KG')
         original_price = '30,000원'
         discount_price = '24,000원'
