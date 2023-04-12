@@ -195,7 +195,7 @@ def 밀키트():
         image_url = 'https://raw.githubusercontent.com/Gyeunggeun/Chungju/f33372d4dbdacfa398707644873322dc4c7e0984/%EC%9D%B4%EB%AF%B8%EC%A7%80/%EB%94%B8%EA%B8%B0%EB%A7%89%EA%B1%B8%EB%A6%AC2.png'
         markdown_text = f"<div style='text-align:center'><img src='{image_url}' style='width: 300px; height: 300px;'></div>"
         st.markdown(markdown_text, unsafe_allow_html=True)
-        st.text('딸기 막걸리')
+        st.text('딸기 담금주')
         original_price = '35,000원'
         discount_price = '28,000원'
         discount_html = f"""
@@ -295,11 +295,12 @@ def 특산품():
         st.markdown(discount_html, unsafe_allow_html=True)
 
     with col2:
-        image_url = 'https://raw.githubusercontent.com/Gyeunggeun/Chungju/f33372d4dbdacfa398707644873322dc4c7e0984/%EC%9D%B4%EB%AF%B8%EC%A7%80/%EB%96%A1%EB%B3%B6%EC%9D%B42.png'
+        image_url = 'https://raw.githubusercontent.com/Gyeunggeun/Chungju/d48d2b375027954d932954c7954082457f43c32f/%EC%9D%B4%EB%AF%B8%EC%A7%80/%EC%9D%8C%EC%8B%9D/%EB%94%B8%EA%B8%B0%EB%8B%B4%EA%B8%88%EC%A3%BC.png'
 
         markdown_text = f"<div style='text-align:center'><img src='{image_url}' style='width: 300px; height: 300px;'></div>"
         st.markdown(markdown_text, unsafe_allow_html=True)
-        st.text('고구마닭갈비')
+        st.markdown("<h6 style='color:#FF5733; font-weight:bold;'>NEW!</h2>", unsafe_allow_html=True)
+        st.text('딸기 담금주')
         original_price = '35,000원'
         discount_price = '28,000원'
         discount_html = f"""
