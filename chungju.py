@@ -13,28 +13,28 @@ def 홈페이지():
     image_url = "https://raw.githubusercontent.com/Gyeunggeun/Chungju/c0ef62513e73722f10fb39a238290a449a7f944c/%EC%9D%B4%EB%AF%B8%EC%A7%80/%EB%A1%9C%EA%B3%A0/%EC%A7%81%EC%A7%80%EB%A7%88%EC%BC%93%20%EC%8B%A0%EB%A1%9C%EA%B3%A0.png"
     markdown_text = f"<div style='text-align:center'><img src='{image_url}' style='width: 500px;'></div>"
     st.markdown(markdown_text, unsafe_allow_html=True)
-    st.markdown("<h4 style='text-align: center; font-family: Malgun Gothic;'>청주시의 프리미엄 식품 브랜드 청원생명의 물품을 판매하는 <br><br>직지마켓입니다.</h4>", unsafe_allow_html=True)
+    st.markdown("<h4 style='text-align: center; font-family: Noto Sans KR;'>청주시의 프리미엄 식품 브랜드 청원생명의 물품을 판매하는 <br><br>직지마켓입니다.</h4>", unsafe_allow_html=True)
 
-    st.markdown("<h4 style='text-align: center; font-family: Malgun Gothic;'><br>청원생명과 함께 청주시의 프리미엄 브랜드를 체험하세요.</h4>",
+    st.markdown("<h4 style='text-align: center; font-family: Noto Sans KR;'><br>청원생명과 함께 청주시의 프리미엄 브랜드를 체험하세요.</h4>",
                 unsafe_allow_html=True)
 
 
 
 def 청원생명이란():
     # 청원생명이란 무엇이고, 인증마크에 대한 소개글 작성
-    st.markdown("<h1 style='text-align: center; color: #006400; font-family: Malgun-Gothic;'>청원생명이란?</h1>", unsafe_allow_html=True)
-    st.markdown("<h4 style='text-align: center; font-family: Malgun-Gothic;'><br>청원생명은 청주의 프리미엄 식품 브랜드입니다.</h3>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center; color: #006400; font-family: Noto Sans KR;'>청원생명이란?</h1>", unsafe_allow_html=True)
+    st.markdown("<h4 style='text-align: center; font-family: Noto Sans KR;'><br>청원생명은 청주의 프리미엄 식품 브랜드입니다.</h3>", unsafe_allow_html=True)
     image_url = "https://raw.githubusercontent.com/Gyeunggeun/Chungju/ff553a44b43e42badd58ce9c7dc7b0fe05fe11e9/%EC%9D%B4%EB%AF%B8%EC%A7%80/%EB%A1%9C%EA%B3%A0/%EC%B2%AD%EC%9B%90%EC%83%9D%EB%AA%85%20%EC%B2%B4%ED%81%AC.png"
     markdown_text = f"<div style='text-align:center'><img src='{image_url}' style='width: 700px;'></div>"
     st.markdown(markdown_text, unsafe_allow_html=True)
 
 
     # # 청원생명 브랜드
-    # st.markdown("<h2 style='text-align: center; color: #006400; font-family: Malgun-Gothic;'>청원생명 브랜드</h2>", unsafe_allow_html=True)
-    # st.markdown("<h4 style='text-align: center; font-family: Malgun-Gothic;'>인증마크 소개</h4>", unsafe_allow_html=True)
+    # st.markdown("<h2 style='text-align: center; color: #006400; font-family: Noto Sans KR;'>청원생명 브랜드</h2>", unsafe_allow_html=True)
+    # st.markdown("<h4 style='text-align: center; font-family: Noto Sans KR;'>인증마크 소개</h4>", unsafe_allow_html=True)
 
 
-    st.markdown("<h2 style='color: #006400; font-family: Malgun-Gothic;'>청원생명 소개</h2>", unsafe_allow_html=True)
+    st.markdown("<h2 style='color: #006400; font-family: Noto Sans KR;'>청원생명 소개</h2>", unsafe_allow_html=True)
 
     tab1, tab2 = st.tabs(['인증마크', '상세설명'])
 
@@ -43,8 +43,9 @@ def 청원생명이란():
         image_url = "https://raw.githubusercontent.com/Gyeunggeun/Chungju/c7bd8c0aaf5f96d0d23ba0da73aa792a7e4903e8/%EC%9D%B4%EB%AF%B8%EC%A7%80/%EB%A1%9C%EA%B3%A0/%EC%B2%AD%EC%9B%90%EC%83%9D%EB%AA%85%EC%9D%B8%EC%A6%9D.png"
         markdown_text = f"<div style='text-align:center'><img src='{image_url}' style='width: 500px;'></div>"
         st.markdown(markdown_text, unsafe_allow_html=True)
-        st.markdown("<h4 style=' font-family: Noto Sans KR; line-height: 1.5; letter-spacing: -0.5px'>청주를 대표하는 삼색과 청원생명의 푸르른 자연환경과 맑은 물을 상징하는 청색의 조화를 통해 탄생한 인증마크입니다.<br><br>직지 마켓에서 구매한 제품 중 청원생명 인증마크를 확인하시면, 해당 제품이 청주지역에서 안전하게 생산되었으며, 청원생명의 엄격한 품질 기준을 통과했다는 것을 보장받을 수 있습니다.<br><br>이를 통해 더욱 신뢰성 높은 제품을 선택할 수 있으며, 지역 농업인들과 환경 보호에 기여할 수 있는 소비를 할 수 있습니다.</h4>", unsafe_allow_html=True)
-
+        st.markdown(
+            "<h4 style=' font-family: Noto Sans KR; line-height: 1.5; letter-spacing: -0.5px'>청주를 대표하는 삼색과 청원생명의 푸르른 자연환경과<br>맑은 물을 상징하는 청색의 조화를 통해 탄생한 인증마크입니다.<br><br>직지 마켓에서 구매한 제품 중 청원생명 인증마크를 확인하시면,<br>해당 제품이 청주지역에서 안전하게 생산되었으며,<br> 청원생명의 엄격한 품질 기준을 통과했다는 것을 보장받을 수 있습니다.<br><br>이를 통해 더욱 신뢰성 높은 제품을 선택할 수 있으며,<br>지역 농업인들과 환경 보호에 기여할 수 있는 소비를 할 수 있습니다.</h4>",
+            unsafe_allow_html=True)
 
     with tab2:
         st.caption('상세설명')
@@ -58,7 +59,7 @@ def 특산물():
     st.markdown("<h1 style='text-align: center; color: #006400 ;font-family: Noto Sans KR;'>특산물</h1><br>", unsafe_allow_html=True)
 
     
-    # st.markdown("<h1 style='text-align: center; color: #FF5733; font-family: Malgun-Gothic;'>특산물</h1>", unsafe_allow_html=True)
+    # st.markdown("<h1 style='text-align: center; color: #FF5733; font-family: Noto Sans KR;'>특산물</h1>", unsafe_allow_html=True)
     
     col1, col2, col3 = st.columns(3)
     with col1:
@@ -206,10 +207,10 @@ def 특산물():
 def 밀키트():
     # 특산물 소개글 작성
     
-    st.markdown("<h1 style='text-align: center; color: #006400; font-family: Malgun-Gothic;'>밀키트</h1><br>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center; color: #006400; font-family: Noto Sans KR;'>밀키트</h1><br>", unsafe_allow_html=True)
     col1, col2 = st.columns(2)
     with col1:
-        image_url = 'https://raw.githubusercontent.com/Gyeunggeun/Chungju/f33372d4dbdacfa398707644873322dc4c7e0984/%EC%9D%B4%EB%AF%B8%EC%A7%80/%EB%94%B8%EA%B8%B0%EB%A7%89%EA%B1%B8%EB%A6%AC2.png'
+        image_url = 'https://raw.githubusercontent.com/Gyeunggeun/Chungju/d9007949d56a6bd06c1836acf745355a55354053/%EC%9D%B4%EB%AF%B8%EC%A7%80/%EC%9D%8C%EC%8B%9D/%EB%94%B8%EA%B8%B0%EB%8B%B4%EA%B8%88%EC%A3%BC2.png'
         markdown_text = f"<div style='text-align:center'><img src='{image_url}' style='width: 300px; height: 300px;'></div>"
         st.markdown(markdown_text, unsafe_allow_html=True)
         st.markdown("""
@@ -306,7 +307,7 @@ def 밀키트():
         
 def 특산품():
     # 특산물 소개글 작성
-    st.markdown("<h1 style='text-align: center; color: #006400; font-family: Malgun-Gothic;'>특산품</h1><br>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center; color: #006400; font-family: Noto Sans KR;'>특산품</h1><br>", unsafe_allow_html=True)
     col1, col2 = st.columns(2)
     with col1:
         image_url = 'https://raw.githubusercontent.com/Gyeunggeun/Chungju/1cdaf953c6b8f21079c31e271a6792a4fad6bb96/%EC%9D%B4%EB%AF%B8%EC%A7%80/%EC%9D%8C%EC%8B%9D/%EA%B3%A0%EA%B5%AC%EB%A7%88%EB%96%A11.png'
