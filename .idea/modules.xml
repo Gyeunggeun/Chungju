@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://D:/Chungju/.idea/Chungju.iml" filepath="D:/Chungju/.idea/Chungju.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/PycharmProjects2.iml" filepath="$PROJECT_DIR$/.idea/PycharmProjects2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Chungju.iml" filepath="$PROJECT_DIR$/.idea/Chungju.iml" />
+      <module fileurl="file://$USER_HOME$/PycharmProjects/PycharmProjects2/.idea/PycharmProjects2.iml" filepath="$USER_HOME$/PycharmProjects/PycharmProjects2/.idea/PycharmProjects2.iml" />
     </modules>
   </component>
 </project>
