@@ -210,14 +210,14 @@ def 밀키트():
     st.markdown("<h1 style='text-align: center; color: #006400; font-family: Noto Sans KR;'>밀키트</h1><br>", unsafe_allow_html=True)
     col1, col2 = st.columns(2)
     with col1:
-        image_url = 'https://raw.githubusercontent.com/Gyeunggeun/Chungju/d9007949d56a6bd06c1836acf745355a55354053/%EC%9D%B4%EB%AF%B8%EC%A7%80/%EC%9D%8C%EC%8B%9D/%EB%94%B8%EA%B8%B0%EB%8B%B4%EA%B8%88%EC%A3%BC2.png'
+        image_url = 'https://raw.githubusercontent.com/Gyeunggeun/Chungju/9aa321cc5aebbdeaca7732f376833907e05ab093/%EC%9D%B4%EB%AF%B8%EC%A7%80/%EC%9D%8C%EC%8B%9D/%EB%94%B8%EA%B8%B0%EB%8B%B4%EA%B8%88%EC%A3%BC2.png'
         markdown_text = f"<div style='text-align:center'><img src='{image_url}' style='width: 300px; height: 300px;'></div>"
         st.markdown(markdown_text, unsafe_allow_html=True)
         st.markdown("""
             <br><strong style='font-family: Noto Sans KR;'>딸기 담금주</strong>
         """, unsafe_allow_html=True)
-        original_price = '35,000원'
-        discount_price = '28,000원'
+        original_price = '9,000원'
+        discount_price = '7,500원'
         discount_html = f"""
         <span style='text-decoration: line-through; color: #a0a0a0; margin-right: 8px;'>{original_price}</span>
         <span style='font-weight: bold; color: #ff3e00;'>{discount_price}</span>
@@ -232,8 +232,8 @@ def 밀키트():
         st.markdown("""
             <br><strong style='font-family: Noto Sans KR;'>떡볶이</strong>
         """, unsafe_allow_html=True)
-        original_price = '25,000원'
-        discount_price = '20,000원'
+        original_price = '7,500원'
+        discount_price = '6,000원'
         discount_html = f"""
         <span style='text-decoration: line-through; color: #a0a0a0; margin-right: 8px;'>{original_price}</span>
         <span style='font-weight: bold; color: #ff3e00;'>{discount_price}</span>
@@ -249,8 +249,8 @@ def 밀키트():
         st.markdown("""
             <br><strong style='font-family: Noto Sans KR;'>애호박전</strong>
         """, unsafe_allow_html=True)
-        original_price = '25,000원'
-        discount_price = '20,000원'
+        original_price = '15,000원'
+        discount_price = '13,000원'
         discount_html = f"""
         <span style='text-decoration: line-through; color: #a0a0a0; margin-right: 8px;'>{original_price}</span>
         <span style='font-weight: bold; color: #ff3e00;'>{discount_price}</span>
@@ -263,10 +263,10 @@ def 밀키트():
         markdown_text = f"<div style='text-align:center'><img src='{image_url}' style='width: 300px; height: 300px;'></div>"
         st.markdown(markdown_text, unsafe_allow_html=True)
         st.markdown("""
-            <br><strong style='font-family: Noto Sans KR;'>고구마 닭갈비</strong>
+            <br><strong style='font-family: Noto Sans KR;'>고구마 닭갈비 1kg</strong>
         """, unsafe_allow_html=True)
-        original_price = '35,000원'
-        discount_price = '28,000원'
+        original_price = '25,000원'
+        discount_price = '20,000원'
         discount_html = f"""
         <span style='text-decoration: line-through; color: #a0a0a0; margin-right: 8px;'>{original_price}</span>
         <span style='font-weight: bold; color: #ff3e00;'>{discount_price}</span>
