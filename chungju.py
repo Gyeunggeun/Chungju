@@ -9,16 +9,13 @@ st.markdown("""
 
 
 def 홈페이지():
-    # 제목
-    st.markdown("<h1 style='text-align: center; color: #006400; font-family: Noto Sans KR;'>직지마켓</h1>", unsafe_allow_html=True)
-    st.markdown("<h4 style='text-align: center; font-family: Malgun Gothic;'><br>청주시의 프리미엄 식품 브랜드 청원생명의 물품을 판매하는 <br><br>직지마켓입니다.</h4>", unsafe_allow_html=True)
-
     # 이미지 중앙 정렬
-    image_url = "https://raw.githubusercontent.com/Gyeunggeun/Chungju/dd768c6ca0abb8a5817ae8d0873c41f88f478569/%EC%9D%B4%EB%AF%B8%EC%A7%80/%EB%A1%9C%EA%B3%A0/%EC%A7%81%EC%A7%80%EB%A7%88%EC%BC%93.png"
+    image_url = "https://raw.githubusercontent.com/Gyeunggeun/Chungju/c0ef62513e73722f10fb39a238290a449a7f944c/%EC%9D%B4%EB%AF%B8%EC%A7%80/%EB%A1%9C%EA%B3%A0/%EC%A7%81%EC%A7%80%EB%A7%88%EC%BC%93%20%EC%8B%A0%EB%A1%9C%EA%B3%A0.png"
     markdown_text = f"<div style='text-align:center'><img src='{image_url}' style='width: 500px;'></div>"
     st.markdown(markdown_text, unsafe_allow_html=True)
+    st.markdown("<h4 style='text-align: center; font-family: Malgun Gothic;'>청주시의 프리미엄 식품 브랜드 청원생명의 물품을 판매하는 <br><br>직지마켓입니다.</h4>", unsafe_allow_html=True)
 
-    st.markdown("<h4 style='text-align: center; font-family: Malgun Gothic;'>청원생명과 함께 청주시의 프리미엄 브랜드를 체험하세요.</h4>",
+    st.markdown("<h4 style='text-align: center; font-family: Malgun Gothic;'><br>청원생명과 함께 청주시의 프리미엄 브랜드를 체험하세요.</h4>",
                 unsafe_allow_html=True)
 
 
