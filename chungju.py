@@ -32,9 +32,9 @@ def 청원생명이란():
     st.markdown(markdown_text, unsafe_allow_html=True)
 
 
-    # 청원생명 브랜드
-    st.markdown("<h2 style='text-align: center; color: #006400; font-family: Malgun-Gothic;'>청원생명 브랜드</h2>", unsafe_allow_html=True)
-    st.markdown("<h4 style='text-align: center; font-family: Malgun-Gothic;'>인증마크 소개</h4>", unsafe_allow_html=True)
+    # # 청원생명 브랜드
+    # st.markdown("<h2 style='text-align: center; color: #006400; font-family: Malgun-Gothic;'>청원생명 브랜드</h2>", unsafe_allow_html=True)
+    # st.markdown("<h4 style='text-align: center; font-family: Malgun-Gothic;'>인증마크 소개</h4>", unsafe_allow_html=True)
 
 
     st.markdown("<h2 style='color: #006400; font-family: Malgun-Gothic;'>청원생명 소개</h2>", unsafe_allow_html=True)
@@ -46,7 +46,7 @@ def 청원생명이란():
         image_url = "https://raw.githubusercontent.com/Gyeunggeun/Chungju/c7bd8c0aaf5f96d0d23ba0da73aa792a7e4903e8/%EC%9D%B4%EB%AF%B8%EC%A7%80/%EB%A1%9C%EA%B3%A0/%EC%B2%AD%EC%9B%90%EC%83%9D%EB%AA%85%EC%9D%B8%EC%A6%9D.png"
         markdown_text = f"<div style='text-align:center'><img src='{image_url}' style='width: 500px;'></div>"
         st.markdown(markdown_text, unsafe_allow_html=True)
-        st.markdown("<h4 style=' text-align: center; font-family: Malgun Gothic; line-height: 1.5'>청주를 대표하는 삼색과 청원생명의 푸르른 자연환경과 맑은 물을 상징하는 청색의 조화를 통해 탄생한 인증마크입니다.<br><br>직지 마켓에서 구매한 제품 중 청원생명 인증마크를 확인하시면, 해당 제품이 청주지역에서 안전하게 생산되었으며, 청원생명의 엄격한 품질 기준을 통과했다는 것을 보장받을 수 있습니다.<br><br>이를 통해 더욱 신뢰성 높은 제품을 선택할 수 있으며, 지역 농업인들과 환경 보호에 기여할 수 있는 소비를 할 수 있습니다.</h4>", unsafe_allow_html=True)
+        st.markdown("<h4 style=' font-family: Noto Sans KR; line-height: 1.5; letter-spacing: -0.5px'>청주를 대표하는 삼색과 청원생명의 푸르른 자연환경과 맑은 물을 상징하는 청색의 조화를 통해 탄생한 인증마크입니다.<br><br>직지 마켓에서 구매한 제품 중 청원생명 인증마크를 확인하시면, 해당 제품이 청주지역에서 안전하게 생산되었으며, 청원생명의 엄격한 품질 기준을 통과했다는 것을 보장받을 수 있습니다.<br><br>이를 통해 더욱 신뢰성 높은 제품을 선택할 수 있으며, 지역 농업인들과 환경 보호에 기여할 수 있는 소비를 할 수 있습니다.</h4>", unsafe_allow_html=True)
 
 
     with tab2:
