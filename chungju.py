@@ -3,10 +3,11 @@ import streamlit as st
 
 def 홈페이지():
     # 제목
-    st.markdown("<h1 style='text-align: center; color: #FF5733; font-family: Malgun Gothic;'>청원생명</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center; color: #FF5733; font-family: Malgun Gothic;'>반갑습니다</h1>", unsafe_allow_html=True)
+    st.markdown("<h3 style='text-align: center; font-family: Malgun Gothic;'><br><br>청주시의 프리미엄 식품 브랜드 청원생명의 물품을 판매하는 직지샵입니다</h1>", unsafe_allow_html=True)
 
     # 이미지 중앙 정렬
-    image_url = "https://raw.githubusercontent.com/Gyeunggeun/Chungju/7a6d43a47041047a9219097cb46fb594d2fec634/%EC%A7%81%EC%A7%80%EC%83%B5.png" 
+    image_url = "https://raw.githubusercontent.com/Gyeunggeun/Chungju/c7bd8c0aaf5f96d0d23ba0da73aa792a7e4903e8/%EC%9D%B4%EB%AF%B8%EC%A7%80/%EB%A1%9C%EA%B3%A0/%EC%A7%81%EC%A7%80%EB%A7%88%EC%BC%93.png"
     markdown_text = f"<div style='text-align:center'><img src='{image_url}' style='width: 500px;'></div>"
     st.markdown(markdown_text, unsafe_allow_html=True)
 
