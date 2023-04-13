@@ -249,7 +249,7 @@ def 밀키트():
 
     col1, col2 = st.columns(2)
     with col1:
-        image_url = 'https://raw.githubusercontent.com/Gyeunggeun/Chungju/f33372d4dbdacfa398707644873322dc4c7e0984/%EC%9D%B4%EB%AF%B8%EC%A7%80/%EC%9D%B4%EC%9C%A0%EC%9D%B4.png'
+        image_url = 'https://raw.githubusercontent.com/Gyeunggeun/Chungju/1cdaf953c6b8f21079c31e271a6792a4fad6bb96/%EC%9D%B4%EB%AF%B8%EC%A7%80/%EC%9D%8C%EC%8B%9D/%EB%96%A1%EA%B5%AD%20%EB%B0%80%ED%82%A4%ED%8A%B8.png'
         markdown_text = f"<div style='text-align:center'><img src='{image_url}' style='width: 300px; height: 300px;'></div>"
         st.markdown(markdown_text, unsafe_allow_html=True)
         st.text('청주 쌀 떡국')
@@ -262,7 +262,7 @@ def 밀키트():
         st.markdown(discount_html, unsafe_allow_html=True)
 
     with col2:
-        image_url = 'https://raw.githubusercontent.com/Gyeunggeun/Chungju/f33372d4dbdacfa398707644873322dc4c7e0984/%EC%9D%B4%EB%AF%B8%EC%A7%80/%EC%9D%B4%EC%9C%A0%EC%9D%B4.png'
+        image_url = 'https://raw.githubusercontent.com/Gyeunggeun/Chungju/1cdaf953c6b8f21079c31e271a6792a4fad6bb96/%EC%9D%B4%EB%AF%B8%EC%A7%80/%EC%9D%8C%EC%8B%9D/%ED%95%B4%EB%AC%BC%EB%88%84%EB%A3%BD%EC%A7%80%ED%83%95.png'
         markdown_text = f"<div style='text-align:center'><img src='{image_url}' style='width: 300px; height: 300px;'></div>"
         st.markdown(markdown_text, unsafe_allow_html=True)
         st.text('해물누룽지탕')
@@ -280,7 +280,7 @@ def 특산품():
     st.markdown("<h1 style='text-align: center; color: #FF5733; font-family: Arial;'>특산품</h1>", unsafe_allow_html=True)
     col1, col2 = st.columns(2)
     with col1:
-        image_url = 'https://raw.githubusercontent.com/Gyeunggeun/Chungju/0060c3cf1aa3b1186e79bb6dfcc05ca929d978c0/%EC%9D%B4%EB%AF%B8%EC%A7%80/%EA%B3%A0%EA%B5%AC%EB%A7%88%EB%96%A1.png'
+        image_url = 'https://raw.githubusercontent.com/Gyeunggeun/Chungju/1cdaf953c6b8f21079c31e271a6792a4fad6bb96/%EC%9D%B4%EB%AF%B8%EC%A7%80/%EC%9D%8C%EC%8B%9D/%EA%B3%A0%EA%B5%AC%EB%A7%88%EB%96%A11.png'
         markdown_text = f"<div style='text-align:center'><img src='{image_url}' style='width: 300px; height: 300px;'></div>"
         st.markdown(markdown_text, unsafe_allow_html=True)
         st.text('고구마 떡 1kg')
@@ -294,7 +294,7 @@ def 특산품():
         st.markdown(discount_html, unsafe_allow_html=True)
         # st.latex(r'''\sout{-10%}''')
     with col2:
-        image_url = 'https://raw.githubusercontent.com/Gyeunggeun/Chungju/f33372d4dbdacfa398707644873322dc4c7e0984/%EC%9D%B4%EB%AF%B8%EC%A7%80/%EA%B3%A0%EA%B5%AC%EB%A7%88%EA%B3%BC%EC%9E%90_%EC%9B%90%EB%B3%B8.png'
+        image_url = 'https://raw.githubusercontent.com/Gyeunggeun/Chungju/1cdaf953c6b8f21079c31e271a6792a4fad6bb96/%EC%9D%B4%EB%AF%B8%EC%A7%80/%EC%9D%8C%EC%8B%9D/%EA%B3%A0%EA%B5%AC%EB%A7%88%EA%B3%BC%EC%9E%90_%EC%95%84%EC%9D%B4%EC%9A%A9.png'
         markdown_text = f"<div style='text-align:center'><img src='{image_url}' style='width: 300px; height: 300px;'></div>"
         st.markdown(markdown_text, unsafe_allow_html=True)
         st.text('고구마 과자')
@@ -334,7 +334,8 @@ def 특산품():
         <span style='font-weight: bold; color: #ff3e00;'>{discount_price}</span>
         """
         st.markdown(discount_html, unsafe_allow_html=True)
-        
+
+
         
 page_names_to_funcs = {'홈페이지': 홈페이지, '청원생명이란?': 청원생명이란, '특산물': 특산물, '밀키트': 밀키트, '특산품':특산품}
 
