@@ -4,14 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="99779758-03eb-4d05-9dc3-380b2601c162" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+=======
+    <list default="true" id="3b7b7eac-59f6-477e-9bbf-e76e6f387d6e" name="변경" comment="">
+      <change beforePath="$USER_HOME$/PycharmProjects/PycharmProjects2/.idea/workspace.xml" beforeDir="false" afterPath="$USER_HOME$/PycharmProjects/PycharmProjects2/.idea/workspace.xml" afterDir="false" />
+>>>>>>> 1068871c25e262b64010a882f0a3360ef2063ad9
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -20,9 +26,12 @@
       </list>
     </option>
   </component>
+=======
+>>>>>>> 1068871c25e262b64010a882f0a3360ef2063ad9
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$USER_HOME$/PycharmProjects/PycharmProjects2" />
   </component>
+<<<<<<< HEAD
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -30,14 +39,21 @@
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+=======
+  <component name="ProjectId" id="2ON5zPssIK3KJIQ8feir5jBGD5W" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+>>>>>>> 1068871c25e262b64010a882f0a3360ef2063ad9
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+<<<<<<< HEAD
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+=======
+>>>>>>> 1068871c25e262b64010a882f0a3360ef2063ad9
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
@@ -46,16 +62,25 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+<<<<<<< HEAD
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+=======
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
+>>>>>>> 1068871c25e262b64010a882f0a3360ef2063ad9
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="99779758-03eb-4d05-9dc3-380b2601c162" name="Changes" comment="" />
-      <created>1680188244181</created>
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="3b7b7eac-59f6-477e-9bbf-e76e6f387d6e" name="변경" comment="" />
+      <created>1681388461046</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
+<<<<<<< HEAD
       <updated>1680188244181</updated>
       <workItem from="1680188268923" duration="47000" />
       <workItem from="1680188338010" duration="85000" />
@@ -69,13 +94,21 @@
       <workItem from="1681389171678" duration="15188000" />
       <workItem from="1681435957049" duration="68000" />
       <workItem from="1681436112920" duration="3090000" />
+=======
+      <updated>1681388461046</updated>
+      <workItem from="1681388462251" duration="404000" />
+      <workItem from="1681388883619" duration="286000" />
+>>>>>>> 1068871c25e262b64010a882f0a3360ef2063ad9
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+<<<<<<< HEAD
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
+=======
+>>>>>>> 1068871c25e262b64010a882f0a3360ef2063ad9
 </project>
