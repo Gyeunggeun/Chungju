@@ -1,4 +1,5 @@
 import streamlit as st
+import pandas as pd
 
 # Noto Sans KR 글꼴 추가
 st.markdown("""
@@ -373,9 +374,60 @@ def 특산품():
         """
         st.markdown(discount_html, unsafe_allow_html=True)
 
+image_sources = {
+    "이름": [
+        "고구마_원본",
+        "고구마떡",
+        "고구마쌀찐빵",
+        "고구마과자",
+        "딸기",
+        "딸기담금주 특산품",
+        "딸기담금주 밀키트",
+        "떡국 밀키트",
+        "떡국",
+        "떡볶이 밀키트",
+        "고구마닭갈비 밀키트",
+        "복숭아",
+        "블루베리",
+        "사과",
+        "수박",
+        "직지쌀",
+        "토마토",
+        "애호박전 밀키트",
+        "포도",
+        "해물누룽지탕 밀키트"
+    ],
+    "출처": [
+        "https://ko.photo-ac.com/search/%EA%B3%A0%EA%B5%AC%EB%A7%88%20%EB%A7%9B%ED%83%95?is_tag=true",
+        "https://shopee.sg/Sweet-Potato-Tteokbokki-500g-Bundle-Sales-Made-in-Korea-Lee-Mart-i.221176277.6838074401",
+        "http://gmkt.kr/gBPOva1",
+        "http://itempage3.auction.co.kr/DetailView.aspx?itemno=C223227740",
+        "https://www.korea.kr/news/healthView.do?newsId=148858018",
+        " https://pixabay.com/pl/images/search/nap%C3%B3j%20truskawkowy/",
+        "https://www.gettyimages.com/photos/strawberries-alchol?assettype=image&license=rf&alloweduse=availableforalluses&family=creative&phrase=strawberries%20alchol&sort=mostpopular&page=2",
+        "https://www.gettyimagesbank.com/view/%EC%9D%8C%EC%8B%9D-%EB%B0%80%ED%82%A4%ED%8A%B8-%EC%83%88%ED%95%B4-%ED%99%80%EB%A6%AC%EB%8D%B0%EC%9D%B4-%EB%AA%85%EC%A0%88%EC%9D%8C%EC%8B%9D-%ED%8F%AC%EC%9E%A5-%EC%9D%B8%EC%A1%B0%EB%AC%BC%EA%B1%B4-%EB%96%A1%EA%B5%AD-%EB%AA%85%EC%A0%88%EC%9D%8C%EC%8B%9D/jv12478685?ACE_REF=adwords_g&ACE_KW=&gclid=CjwKCAjw0N6hBhAUEiwAXab-TUD9fJZH7YocUiMbXjbt02oxwhFF9QfB3Ng5Xut9ykUJJDzCh9fFWhoCh1sQAvD_BwE&lv=&st=union&mi=2&q=%EB%96%A1%EA%B5%AD+%EB%B0%80%ED%82%A4%ED%8A%B8&ssi=go&si=3365217&gSearchL=eNortjI1sVLKKjM0MjG3MLM00IExLUzBTFNzM2MTczDTyNjSwsgQxDSwNDQzMLRQsgZcMOfEDwc.&totalPage=1&rows=80&rowNum=1&totalImgCnt=5",
+        "https://www.gettyimagesbank.com/view/%EB%96%A1%EA%B5%AD/jv10922004?ACE_REF=adwords_g&ACE_KW=&gclid=CjwKCAjw0N6hBhAUEiwAXab-TUD9fJZH7YocUiMbXjbt02oxwhFF9QfB3Ng5Xut9ykUJJDzCh9fFWhoCh1sQAvD_BwE&lv=&st=union&mi=2&q=%EB%96%A1%EA%B5%AD&ssi=renew_go&ts=700&sort=bm&sm=d&us=&rows=80&page=1&si=3365321&gSearchL=eNpN0jluxDAMBdC7TO2C_NxcJ6eZNm2AnD-UbElx9UBI5qafd2q-X9-_DNcw2LVZh3mxuAmS3S9WI2VVpkGm0lBuaoWiaJA1I9N1_sE4C3JohzypkV60mdbZ1CmSSxdBuD4MSBF1EBWi5G6bhhM9zBi3CMJsLa7qyvCogJGUK0xTNu-yb54DVg-V60TrPivS3RxmLQbTic7G--t2tEug8rD7FhVpBN1EXCfwh6DMHc0TJd3LkbEGFmPfow0XjZ6BwpIDuvvlIcCK5zQdTjJ_2nkoqtfcady8Fp1IcjXehw5jk3lP5m5hUvodsIP6rfS1TktwmaWQlivJENzGwTGLbhRjRUTEnl1eORDeV7vs7oSuT3rLe6PR00L1PU_uvv-9WT_cBTJkU3GidqI1pmHUXdGS61I-CvQC1rkpZHHUUvKWvb7-XDBDK8HS&totalPage=14&rows=80&rowNum=1&totalImgCnt=1046",
+        "https://www.shutterstock.com/ko/image-photo/tteokbokki-eggs-gray-bowl-on-concrete-1800999802",
+        "https://stock.adobe.com/kr/search?k=%EB%96%A1&asset_id=586975308",
+        "https://m.zaramarket.co.kr/product/%EC%B6%94%EC%84%9D%EC%84%A0%EB%AC%BC-%EA%B0%80%EC%9D%84%EB%86%8D%EC%9B%90-%EB%A7%88%EC%A7%80%EB%A7%89%EB%B3%B5%EC%88%AD%EC%95%84-%EA%B5%AC%EC%9B%94%ED%99%A9%EB%8F%84-45kg/38/category/46/display/1/",
+        "https://pixabay.com/ko/photos/%EB%B8%94%EB%A3%A8-%EB%B2%A0%EB%A6%AC-%EA%B3%BC%EC%9D%BC-%EB%8B%A4%EB%B0%9C-5892711/",
+        "http://news.bbsi.co.kr/news/articleView.html?idxno=850841",
+        "http://www.healtip.co.kr/news/articleView.html?idxno=1558",
+        "http://itempage3.auction.co.kr/DetailView.aspx?itemno=B818210238",
+        "https://pixabay.com/ko/photos/%ED%86%A0%EB%A7%88%ED%86%A0-%EA%B3%BC%EC%9D%BC-%EC%8B%A0%EC%84%A0%ED%95%9C-%EB%8B%AC%EC%BD%A4%ED%95%9C-1235662/",
+        "https://bakeitwithlove.com/zucchini-fritters/",
+        "https://www.100ssd.co.kr/news/articleView.html?idxno=89896",
+        "https://www.gettyimagesbank.com/view/%EC%A4%91%EC%8B%9D%ED%95%B4%EB%AC%BC%EB%88%84%EB%A3%BD%EC%A7%80%ED%83%95/a10999009?ACE_REF=adwords_g&ACE_KW=&gclid=CjwKCAjw0N6hBhAUEiwAXab-TVMVkEcJJlv4wxa8mukrUCKQEU5LoPTnc8U52Zge6LpG3fm-S06p7RoCrsAQAvD_BwE&lv=&st=union&mi=2&q=%ED%95%B4%EB%AC%BC%EB%88%84%EB%A3%BD%EC%A7%80%ED%83%95&ssi=go&si=3366121&gSearchL=eNpNkjtuxDAMRO-ytQt-xN_mNGm3XSDnj2xZQ7t6IMYcDqnvOyXfr1-myqKk46RgikVnbYByU_jW-Tg-fxNHpNHGXCJBNW-BCYfMv1i44vapXCICscIH3SsxD6NjGXwU1dkfyAVtZAswXnp3GD2pKarSzewR8NH3iqJKErrJVzxR51ihsu5cMGdQAQ1QITyjFlgy1p2yqZYumXPpvIbrpkAtFQdq6qPl1j0yT2OstTNnIV6TrSHSriF4JjIzUNdu6zG_fgTcqI3WeP2vNq3HXCK3UqzHQdqHsT5tNj5eRAuScTmQKywVlmM_1ig8W8ZdcTmy188_Zo2--A..&totalPage=2&rows=80&rowNum=1&totalImgCnt=110"
+    ]
+}
+image_sources_df = pd.DataFrame(image_sources)
+def 출처():
+    st.title("이미지 출처 정보")
+    st.write(image_sources_df)
+
 
         
-page_names_to_funcs = {'홈페이지': 홈페이지, '청원생명이란?': 청원생명이란, '특산물': 특산물, '밀키트': 밀키트, '특산품':특산품}
+page_names_to_funcs = {'홈페이지': 홈페이지, '청원생명이란?': 청원생명이란, '특산물': 특산물, '밀키트': 밀키트, '특산품':특산품, '출처': 출처}
 
 selected_page = st.sidebar.selectbox('Select a page',page_names_to_funcs.keys())
 
